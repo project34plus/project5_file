@@ -90,11 +90,6 @@ public class Utils { // 빈의 이름 - utils
             return bearerToken.substring(7).trim();
         }
 
-        String token = request.getParameter("token");
-        if (StringUtils.hasText(token)) {
-            return token;
-        }
-
         return null;
     }
 }
