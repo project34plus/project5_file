@@ -47,4 +47,7 @@ public class FileInfo extends BaseMemberEntity {
 
     @Transient
     private String thumbUrl; // 썸네일 기본 경로
+
+    @Transient
+    private String downloadUrl; //다운로드 경로
 }
