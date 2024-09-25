@@ -132,6 +132,7 @@ public class FileInfoService {
         item.setFilePath(filePath);
 
         item.setThumbUrl(utils.url("/thumb", "file-service"));
+        item.setDownloadUrl(utils.url("/download/" + item.getSeq(), "file-service"));
     }
 
     // 브라우저 접근 주소
