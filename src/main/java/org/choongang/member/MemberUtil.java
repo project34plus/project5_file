@@ -19,11 +19,8 @@ public class MemberUtil {
     }
 
     public boolean isAdmin() {
-        if (isLogin()) {
-            List<Authorities> authorities = getMember().getAuthorities();
-            return authorities.stream().anyMatch(s -> s.getAuthority().equals(Authority.ADMIN));
-        }
-        return false;
+
+        return isLogin() && getMember().getAuthorities() == Authority.ADMIN;
     }
 
     public Member getMember() {
